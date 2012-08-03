@@ -55,7 +55,7 @@
 	NSWindow* window = (NSWindow*)notification.object;
 	NSSize size = [window frame].size;
 	
-	DebugNSLog(@"window width = %f, window height = %f", size.width, size.height);
+	NSLog(@"window width = %f, window height = %f", size.width, size.height);
     
     bool isFullScreen = (window.styleMask & NSFullScreenWindowMask) == NSFullScreenWindowMask;
     int titleBarHeight = isFullScreen ? 0 : [[Utils sharedInstance] titleBarHeight:window];

@@ -7,7 +7,7 @@
 - (void) play:(NSString*)file
 {
 	NSURL* fileUrl  = [NSURL fileURLWithPath:[[Utils sharedInstance] pathForResource:file]];
-	DebugNSLog(@"Sound file:%@", [fileUrl description]);
+	NSLog(@"Sound file:%@", [fileUrl description]);
 	
 	NSSound* sound = [[NSSound alloc] initWithContentsOfURL:fileUrl byReference:YES];
 	[sound play];
