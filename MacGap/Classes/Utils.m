@@ -1,4 +1,5 @@
 #import "Utils.h"
+#import "Constants.h"
 
 static Utils* sharedInstance = nil;
 

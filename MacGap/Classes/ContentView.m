@@ -1,6 +1,6 @@
 #import "ContentView.h"
 #import "WebViewDelegate.h"
-#import "AppDelegate.h"
+#import "Utils.h"
 
 @interface WebPreferences (WebPreferencesPrivate)
     - (void)_setLocalStorageDatabasePath:(NSString *)path;
