@@ -29,7 +29,6 @@
 		FAE451C914BA79C600190544 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAE451C714BA79C600190544 /* InfoPlist.strings */; };
 		FAE451CB14BA79C600190544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE451CA14BA79C600190544 /* main.m */; };
 		FAE451CF14BA79C600190544 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAE451CD14BA79C600190544 /* Credits.rtf */; };
-		FAE451D214BA79C600190544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE451D114BA79C600190544 /* AppDelegate.m */; };
 		FAE451D514BA79C600190544 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE451D314BA79C600190544 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
@@ -290,7 +289,6 @@
 				FA3250C514BA85E700BF0781 /* Utils.m in Sources */,
 				FA3250C714BA85E700BF0781 /* WebViewDelegate.m in Sources */,
 				FAE451CB14BA79C600190544 /* main.m in Sources */,
-				FAE451D214BA79C600190544 /* AppDelegate.m in Sources */,
 				88C0646014BDE10A00E4BCE2 /* Window.m in Sources */,
 				88C0646D14BDF6A600E4BCE2 /* WindowController.m in Sources */,
 				88746BEE14CCA435001E160E /* JSEventHelper.m in Sources */,
