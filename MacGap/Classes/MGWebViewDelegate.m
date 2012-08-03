@@ -1,14 +1,13 @@
-#import "WebViewDelegate.h"
+#import "MGWebViewDelegate.h"
 #import "Sound.h"
 #import "Dock.h"
 #import "Notice.h"
 #import "Path.h"
 #import "App.h"
 #import "Window.h"
-#import "WindowController.h"
 #import "Constants.h"
 
-@implementation WebViewDelegate
+@implementation MGWebViewDelegate
 
 @synthesize sound;
 @synthesize dock;
@@ -17,7 +16,6 @@
 @synthesize path;
 @synthesize app;
 @synthesize window;
-@synthesize requestedWindow;
 
 - (void) webView:(WebView*)webView didClearWindowObject:(WebScriptObject*)windowScriptObject forFrame:(WebFrame *)frame
 {
@@ -35,6 +33,19 @@
     }
     
     [windowScriptObject setValue:self forKey:kWebScriptNamespace];
+    
+    NSLog(@"Setting up namespaces %@", self.namespaces);
+    
+    for (NSString *namespace in self.namespaces.allKeys) {
+        id delegate = self.namespaces[namespace];
+        [windowScriptObject setValue:delegate forKey:namespace];
+    }
+}
+
+- (void)addNamespace:(NSString *)namespace delegate:(id)namespaceDelegate {
+    NSLog(@"Adding namespace %@", namespace);
+    if (!self.namespaces) self.namespaces = [[NSMutableDictionary alloc] init];
+    self.namespaces[namespace] = namespaceDelegate;
 }
 
 
@@ -88,7 +99,7 @@
     if ([origin respondsToSelector: @selector(setQuota:)]) {
         [origin performSelector:@selector(setQuota:) withObject:[NSNumber numberWithLongLong: defaultQuota]];
     } else { 
-        NSLog(@"could not increase quota for %@", defaultQuota); 
+        NSLog(@"could not increase quota for %d", (int)defaultQuota);
     }
 }
 
@@ -127,12 +138,14 @@
 }
 
 - (WebView *)webView:(WebView *)sender createWebViewWithRequest:(NSURLRequest *)request{
-    requestedWindow = [[WindowController alloc] initWithRequest:request];
-    return requestedWindow.contentView.webView;    
+    [NSException raise:@"Not implemented" format:nil];
+    // TODO: Create new window and display new webview
+    return nil;
 }
 
 - (void)webViewShow:(WebView *)sender{
-    [requestedWindow showWindow:sender];
+    [NSException raise:@"Not implemented" format:nil];
+    // TODO: Create new window and display new webview
 }
 
 - (void)webView:(WebView *)webView decidePolicyForNewWindowAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request newFrameName:(NSString *)frameName decisionListener:(id < WebPolicyDecisionListener >)listener

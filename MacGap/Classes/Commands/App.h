@@ -1,6 +1,4 @@
-#import <Foundation/Foundation.h>
-
-#import "WindowController.h"
+#import <WebKit/WebKit.h>
 
 @interface App : NSObject {
 

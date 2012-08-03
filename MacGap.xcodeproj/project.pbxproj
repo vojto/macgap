@@ -10,12 +10,11 @@
 		1495814F15C15CCC00E1CFE5 /* Notice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495814E15C15CCC00E1CFE5 /* Notice.m */; };
 		88746BEE14CCA435001E160E /* JSEventHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88746BED14CCA435001E160E /* JSEventHelper.m */; };
 		88C0646014BDE10A00E4BCE2 /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C0645F14BDE10A00E4BCE2 /* Window.m */; };
-		88C0646614BDEC5800E4BCE2 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C0646414BDEC5800E4BCE2 /* Window.xib */; };
-		88C0646D14BDF6A600E4BCE2 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C0646C14BDF6A600E4BCE2 /* WindowController.m */; };
+		9959A67F15CC106400412218 /* MGMacGap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9959A67E15CC106400412218 /* MGMacGap.m */; };
+		998A482B15CC15860011C982 /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 998A482A15CC15860011C982 /* DemoAppDelegate.m */; };
 		FA32509D14BA813600BF0781 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA32509C14BA813600BF0781 /* WebKit.framework */; };
-		FA3250C314BA85E700BF0781 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250BC14BA85E700BF0781 /* ContentView.m */; };
 		FA3250C514BA85E700BF0781 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250BE14BA85E700BF0781 /* Utils.m */; };
-		FA3250C714BA85E700BF0781 /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250C014BA85E700BF0781 /* WebViewDelegate.m */; };
+		FA3250C714BA85E700BF0781 /* MGWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250C014BA85E700BF0781 /* MGWebViewDelegate.m */; };
 		FA3250D314BA860800BF0781 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250C914BA860800BF0781 /* App.m */; };
 		FA3250D514BA860800BF0781 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250CB14BA860800BF0781 /* Dock.m */; };
 		FA3250D914BA860800BF0781 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3250CF14BA860800BF0781 /* Path.m */; };
@@ -51,18 +50,17 @@
 		88746BED14CCA435001E160E /* JSEventHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSEventHelper.m; path = Classes/JSEventHelper.m; sourceTree = "<group>"; };
 		88C0645E14BDE10A00E4BCE2 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = Classes/Window.h; sourceTree = "<group>"; };
 		88C0645F14BDE10A00E4BCE2 /* Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Window.m; path = Classes/Window.m; sourceTree = "<group>"; };
-		88C0646514BDEC5800E4BCE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Window.xib; sourceTree = "<group>"; };
-		88C0646B14BDF6A600E4BCE2 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
-		88C0646C14BDF6A600E4BCE2 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		9959A67D15CC106400412218 /* MGMacGap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMacGap.h; sourceTree = "<group>"; };
+		9959A67E15CC106400412218 /* MGMacGap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMacGap.m; sourceTree = "<group>"; };
+		998A482915CC15860011C982 /* DemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
+		998A482A15CC15860011C982 /* DemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAppDelegate.m; sourceTree = "<group>"; };
 		FA32509C14BA813600BF0781 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FA32509E14BA816E00BF0781 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = MacGap/Growl.framework; sourceTree = "<group>"; };
 		FA3250BA14BA85E700BF0781 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
-		FA3250BB14BA85E700BF0781 /* ContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ContentView.h; path = Classes/ContentView.h; sourceTree = "<group>"; };
-		FA3250BC14BA85E700BF0781 /* ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ContentView.m; path = Classes/ContentView.m; sourceTree = "<group>"; };
 		FA3250BD14BA85E700BF0781 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Classes/Utils.h; sourceTree = "<group>"; };
 		FA3250BE14BA85E700BF0781 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Classes/Utils.m; sourceTree = "<group>"; };
-		FA3250BF14BA85E700BF0781 /* WebViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WebViewDelegate.h; path = Classes/WebViewDelegate.h; sourceTree = "<group>"; };
-		FA3250C014BA85E700BF0781 /* WebViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WebViewDelegate.m; path = Classes/WebViewDelegate.m; sourceTree = "<group>"; };
+		FA3250BF14BA85E700BF0781 /* MGWebViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MGWebViewDelegate.h; path = Classes/MGWebViewDelegate.h; sourceTree = "<group>"; };
+		FA3250C014BA85E700BF0781 /* MGWebViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MGWebViewDelegate.m; path = Classes/MGWebViewDelegate.m; sourceTree = "<group>"; };
 		FA3250C814BA860800BF0781 /* App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = App.h; path = Classes/Commands/App.h; sourceTree = "<group>"; };
 		FA3250C914BA860800BF0781 /* App.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = App.m; path = Classes/Commands/App.m; sourceTree = "<group>"; };
 		FA3250CA14BA860800BF0781 /* Dock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Dock.h; path = Classes/Commands/Dock.h; sourceTree = "<group>"; };
@@ -84,8 +82,6 @@
 		FAE451CA14BA79C600190544 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAE451CC14BA79C600190544 /* MacGap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacGap-Prefix.pch"; sourceTree = "<group>"; };
 		FAE451CE14BA79C600190544 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FAE451D014BA79C600190544 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FAE451D114BA79C600190544 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FAE451D414BA79C600190544 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,12 +104,12 @@
 			children = (
 				FA3250E114BA87DD00BF0781 /* Commands */,
 				FA3250BA14BA85E700BF0781 /* Constants.h */,
-				FA3250BB14BA85E700BF0781 /* ContentView.h */,
-				FA3250BC14BA85E700BF0781 /* ContentView.m */,
-				FA3250BF14BA85E700BF0781 /* WebViewDelegate.h */,
-				FA3250C014BA85E700BF0781 /* WebViewDelegate.m */,
-				88C0646B14BDF6A600E4BCE2 /* WindowController.h */,
-				88C0646C14BDF6A600E4BCE2 /* WindowController.m */,
+				FA3250BF14BA85E700BF0781 /* MGWebViewDelegate.h */,
+				FA3250C014BA85E700BF0781 /* MGWebViewDelegate.m */,
+				9959A67D15CC106400412218 /* MGMacGap.h */,
+				9959A67E15CC106400412218 /* MGMacGap.m */,
+				998A482915CC15860011C982 /* DemoAppDelegate.h */,
+				998A482A15CC15860011C982 /* DemoAppDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -185,10 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				FA3250E014BA87B800BF0781 /* Classes */,
-				FAE451D014BA79C600190544 /* AppDelegate.h */,
-				FAE451D114BA79C600190544 /* AppDelegate.m */,
 				FAE451D314BA79C600190544 /* MainMenu.xib */,
-				88C0646414BDEC5800E4BCE2 /* Window.xib */,
 				FAE451C514BA79C600190544 /* Supporting Files */,
 			);
 			path = MacGap;
@@ -264,7 +257,6 @@
 				FAE451CF14BA79C600190544 /* Credits.rtf in Resources */,
 				FAE451D514BA79C600190544 /* MainMenu.xib in Resources */,
 				FA3250E714BA8BCE00BF0781 /* application.icns in Resources */,
-				88C0646614BDEC5800E4BCE2 /* Window.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,28 +271,20 @@
 				FA3250D514BA860800BF0781 /* Dock.m in Sources */,
 				FA3250D914BA860800BF0781 /* Path.m in Sources */,
 				FA3250DB14BA860800BF0781 /* Sound.m in Sources */,
-				FA3250C314BA85E700BF0781 /* ContentView.m in Sources */,
 				FA3250C514BA85E700BF0781 /* Utils.m in Sources */,
-				FA3250C714BA85E700BF0781 /* WebViewDelegate.m in Sources */,
+				FA3250C714BA85E700BF0781 /* MGWebViewDelegate.m in Sources */,
 				FAE451CB14BA79C600190544 /* main.m in Sources */,
 				88C0646014BDE10A00E4BCE2 /* Window.m in Sources */,
-				88C0646D14BDF6A600E4BCE2 /* WindowController.m in Sources */,
 				88746BEE14CCA435001E160E /* JSEventHelper.m in Sources */,
 				1495814F15C15CCC00E1CFE5 /* Notice.m in Sources */,
+				9959A67F15CC106400412218 /* MGMacGap.m in Sources */,
+				998A482B15CC15860011C982 /* DemoAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		88C0646414BDEC5800E4BCE2 /* Window.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88C0646514BDEC5800E4BCE2 /* en */,
-			);
-			name = Window.xib;
-			sourceTree = "<group>";
-		};
 		FAE451C714BA79C600190544 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

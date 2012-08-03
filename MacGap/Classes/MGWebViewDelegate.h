@@ -9,9 +9,7 @@
 @class App;
 @class Window;
 
-@class WindowController;
-
-@interface WebViewDelegate : NSObject {
+@interface MGWebViewDelegate : NSObject {
 	Sound* sound;
     Dock* dock;
     Growl* growl;
@@ -21,7 +19,7 @@
     Window* window;
 }
 
-
+@property (strong) NSMutableDictionary *namespaces;
 
 @property (nonatomic, retain) Sound* sound;
 @property (nonatomic, retain) Dock* dock;
@@ -31,6 +29,6 @@
 @property (nonatomic, retain) App* app;
 @property (nonatomic, retain) Window* window;
 
-@property (nonatomic, retain) WindowController *requestedWindow;
+- (void)addNamespace:(NSString *)namespace delegate:(id)namespaceDelegate;
 
 @end

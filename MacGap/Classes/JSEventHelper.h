@@ -6,8 +6,7 @@
 //  Copyright (c) 2012 Twitter. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "WindowController.h"
+#import <WebKit/WebKit.h>
 
 @interface JSEventHelper : NSObject
 

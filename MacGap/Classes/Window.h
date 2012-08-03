@@ -1,12 +1,9 @@
-#import <Foundation/Foundation.h>
-
-#import "WindowController.h"
+#import <WebKit/WebKit.h>
 
 @interface Window : NSObject{
     
 }
 
-@property (retain, nonatomic) WindowController *windowController;
 @property (nonatomic, retain) WebView *webView;
 
 - (id) initWithWebView:(WebView *)view;

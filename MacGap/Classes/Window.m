@@ -2,7 +2,7 @@
 
 @implementation Window
 
-@synthesize windowController, webView;
+@synthesize webView;
 
 - (id) initWithWebView:(WebView*)view
 {
@@ -14,13 +14,15 @@
 
 - (void) open:(NSDictionary *)properties
 {
+    [NSException raise:@"Not implemented" format:nil];
+    
     double width  = [[properties valueForKey:@"width"] doubleValue];
     double height =  [[properties valueForKey:@"height"] doubleValue];
     
-    NSRect frame = NSMakeRect(0, 0, width, height);
-    self.windowController = [[WindowController alloc] initWithURL:[properties valueForKey:@"url"] andFrame:frame];
-    [self.windowController showWindow: [NSApplication sharedApplication].delegate];
-    [self.windowController.window makeKeyWindow];
+//    NSRect frame = NSMakeRect(0, 0, width, height);
+//    self.windowController = [[WindowController alloc] initWithURL:[properties valueForKey:@"url"] andFrame:frame];
+//    [self.windowController showWindow: [NSApplication sharedApplication].delegate];
+//    [self.windowController.window makeKeyWindow];
 }
 
 - (void) move:(NSDictionary *)properties
