@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#ifdef __MAC_10_8
+
 #define APP_NOTICE_NOTIFICATION @"Notice"
 
 @interface Notice : NSObject <NSUserNotificationCenterDelegate> {
@@ -18,3 +20,4 @@
 
 @end
 
+#endif

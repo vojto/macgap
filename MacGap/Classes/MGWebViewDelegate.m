@@ -21,7 +21,9 @@
 {
 	if (self.sound == nil) { self.sound = [Sound new]; }
 	if (self.dock == nil) { self.dock = [Dock new]; }
+#ifdef __MAC_10_8
 	if (self.notice == nil) { self.notice = [Notice new]; }
+#endif
 	if (self.path == nil) { self.path = [Path new]; }
 	
     if (self.app == nil) { 

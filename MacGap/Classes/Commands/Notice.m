@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Twitter. All rights reserved.
 //
 
+#ifdef __MAC_10_8
+
 #import "Notice.h"
 
 @implementation Notice
@@ -48,3 +50,5 @@
 }
 
 @end
+
+#endif
